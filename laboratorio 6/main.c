@@ -1,7 +1,6 @@
-/* EJERCICIO 1
+/* EJERCICIO 2
 
 NOMBRE: DAVID ALEJANDRO PEÑATE RODRIGUEZ
-
 CARNET: 00104422  */
 
 #include <stdio.h>
@@ -9,36 +8,34 @@ CARNET: 00104422  */
 
 int main()
 {
-    char text[50];
-    char combinacion[35];
-    char* result;
+    // VARIABLE CARACTER TAMANO 50
 
-    printf("INGRESAR UN TEXTO: ");
-    scanf("%s", text);
-    
+    char palabra[50];
+    int N = 0, A = 0, i = 0, B = 0;
 
-    printf("QUE QUIERE COMPARAR: ");
+    // MENSAJE PIDE PALABRA
+    printf("\nINGRESE UNA PALABRA: ");
+    scanf("%s", &palabra);
 
-    scanf("%s", combinacion);
-    
+    N = strlen(palabra); // FUNCION QUE LEE LO QUE ESTE EN PALABRA
 
-    
-    result = strstr(text, combinacion);
-
-    //5 == 4
-    // 5 != 4
-
-    if (result != NULL)  //RESULT DISTINTO DE NULO
+    for (i = 0, B = N - 1; i <= B; i++, B--) // BUCLE EVALUA LOS CARACTERES
     {
-        printf("SI SE ENCONTRO EN EL TEXTO\n"); 
-        printf("LAS OCURRENCIAS SON %s QUE ESTA EN %s", combinacion, text);
+        if (palabra[i] != palabra[B]) // SI PALABRA EN LA POSICION i ES DIFERENTE A PALABRA EN POSICION B
+        {
+            A = 1; // A sera 1
 
+            break;
+        }
     }
-    else printf("NO SE ENCONTRARON OCURRENCIAS");
 
-
-
+    if (A == 1) //SI A = 1
+    {
+        printf("\nLA PALABRA NO ES PALINDROMO\n");
+    }
+        
+    else
+    printf("\nLA PALABRA ES UN PALINDROMO\n");
 
     return 0;
 }
-
