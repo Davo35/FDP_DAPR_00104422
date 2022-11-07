@@ -1,0 +1,37 @@
+¿QUE ES SER AUTODIDACTA?
+
+--Autodidacta es aprender por cuenta propia, instruirnos nosotros mismos cuando tengamos una duda en un tema o cuando queramos aprender algo
+  debe ser por iniciativa propia.
+
+
+DIFERENCIA DE ARREGLO Y MATRIZ EN PROGRAMACION
+
+Arreglo: Es un espacio de memoria en el que podemos guardar una serie de elementos del mismo tipo
+	 Podemos interpretarlo como varias celdas a la par de otra de forma lineal (una sola fila) en la que cada 
+	 casilla es un espacio para un elemento y cada casilla tiene una posicion empezando con la
+	 primer casilla que seria la posicion 0, luego la 1, la 2, 3 y asi susesivamente.
+
+Matriz: Es un espacio de memoria en el que podemos guardar una serie de datos de elementos del mismo tipo 
+	igual que en el arreglo, solo que la diferencia es que en la matriz los elementos no son de forma de fila de casillas lineales
+	sino que estas son siempre casillas pero ahora son filas y columnas. Es decir la matriz es parte de un arreglo o sus posiciones son parte de otras posiciones 
+	de un arreglo.
+
+	¿COMO SE DECLARA?
+	
+	tipo de dato Nombre de la Matriz[filas][columnas];
+	
+------  int matriz1[10][5];
+
+	
+--FUENTES QUE UTILIZO PARA APRENDER A PROGRAMAR: YouTube.
+  
+  Programacion ATS
+  
+  Pasos por ingenieria
+
+  diego moisset de espanes
+
+  
+
+  
+
